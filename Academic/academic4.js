@@ -167,3 +167,24 @@ function applyLang(lang, animate) {
     else el.textContent = text;
  });
 }
+
+// ── Fix AIoT ── ป้องกัน Google Translate แปล AIoT เป็น AIO
+function fixAIoT() {
+  document.querySelectorAll('.NameEngAC').forEach(function(span) {
+    span.textContent = span.textContent
+      .replace(/Master of Engineering \(AIO.*?\)/gi, 'M.Eng. (AIoT and Information)')
+      .replace(/Doctor of Philosophy \(AIO.*?\)/gi, 'Ph.D. (AIoT and Information)')
+      .replace(/\bAIO\b/g, 'AIoT');
+  });
+}
+
+// observe เฉพาะ element ที่สนใจ ไม่ใช่ทั้งหน้า
+var targets = document.querySelectorAll('.NameEngAC');
+if (targets.length) {
+  var observer = new MutationObserver(fixAIoT);
+  targets.forEach(function(el) {
+    observer.observe(el, { childList: true, characterData: true, subtree: true });
+  });
+}
+
+fixAIoT();
