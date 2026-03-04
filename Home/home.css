@@ -1141,3 +1141,12 @@ img {
 body {
     top: 0 !important;
 }
+/* ขนาดตัวปุ่มโดยรวม */
+.bubble {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+.lang-toggle {
+    width: 80px; /* แก้ตรงนี้ */
+}
