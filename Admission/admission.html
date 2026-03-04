@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../asset/navbar.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT and Information Engineering, KMITL</title>
+    <link rel="stylesheet" href="../Admission/admission.css">
+</head>
+
+<body>
+<div id="navbar-placeholder"></div>
+    
+    <main class="admission-layout">
+
+        <section class="panel" id="one-bachelor">
+            <div class="detail-box">
+                <h1 class="head-lebel">รายละเอียดหลักสูตร</h1>
+                <h2 class="lebel-admis">ชื่อหลักสูตร</h2>
+                <h3 class="value-admis">   วศ.บ. วิศวกรรมระบบไอโอทีและสารสนเทศ</h3>
+                <h2 class="lebel-admis">ชื่อหลักสูตรภาษาอังกฤษ</h2>
+                <h3 class="value-admis">  B.Eng. IoT system and Information Engineering</h3>
+                <h2 class="lebel-admis">ประเภทหลักสูตร</h2>
+                <h3 class="value-admis">  ภาษาไทย ปกติ</h3>
+                <h2 class="lebel-admis">วิทยาเขต</h2>
+                <h3 class="value-admis">  ลาดกระบัง</h3>
+                <h2 class="lebel-admis">ค่าใช้จ่าย</h2>
+                <h3 class="value-admis"> ค่าธรรมเนียมการศึกษา 25,000 บาท</h3>
+            </div>
+            <a class="link-admis" href="https://admission.reg.kmitl.ac.th/#/">
+                รายละเอียดการสมัครเพิ่มเติม : https://admission.reg.kmitl.ac.th/#/
+            </a>
+        </section>
+
+        <nav class="tabs-admis" role="tablist" aria-label="เลือกหลักสูตร">
+            <button class="tab-admis" role="tab" aria-selected="true" aria-controls="port" id="tab-port" tabindex="0">
+                Portfolio
+            </button>
+            <button class="tab-admis" role="tab" aria-selected="false" aria-controls="quota" id="tab-quota" tabindex="-1">
+                Quota
+            </button>
+            <button class="tab-admis" role="tab" aria-selected="false" aria-controls="ad" id="tab-ad" tabindex="-1">
+                Admission
+            </button>
+            <button class="tab-admis" role="tab" aria-selected="false" aria-controls="dir-ad" id="tab-dir-ad" tabindex="-1">
+                Direct Admission
+            </button>
+        </nav>
+
+        <div class="admis-container">
+            
+            <!-- portfolio -->
+            <section class="admis-panel" id="port" role="tabpanel"  aria-labelledby="tab-port">
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-1">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โครงการ Young Engineer Talent
+                    </button>
+                    <div class="project-content" id="proj-1" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรอาชีวะ</li>
+                            <li>ผู้สมัครจะต้องมีผลการเรียนเฉลี่ยสะสมรวมอย่างน้อย 5 ภาคการศึกษา ไม่น้อยกว่า 3.50</li>
+                            <li>เป็นผู้ที่เคยได้รับรางวัลการแข่งขันในระดับชาติหรือระดับนานาชาติอย่างน้อย 1 รายการ ทางด้านคณิตศาสตร์ - วิทยาศาสตร์ หรือเทคโนโลยีที่เกี่ยวข้องกับสาขาวิชาที่สมัคร ทั้งนี้ต้องเป็นงานที่จัดขึ้นโดยหน่วยงานซึ่งเป็นที่ยอมรับอย่างกว้างขวาง</li>
+                            <li>เป็นผู้ไม่มีโรคสำคัญที่เป็นอุปสรรคต่อการศึกษา</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>30 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-2">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โครงการเรียนดี ช้างเผือก กลุ่มโรงเรียนสามัญ
+                    </button>
+                    <div class="project-content" id="proj-2" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>โรงเรียนมีสิทธิ์เสนอชื่อนักเรียนได้ตามจํานวนและต้องให้นักเรียนที่มีผลการเรียนเฉลี่ยรวมอย่างน้อย 5 ภาคการศึกษา (ในระดับชั้นมัธยมศึกษาปีที่ 4-6) สูงที่สุด ได้รับสิทธิ์ในการส่งรายชื่อก่อนเสมอ</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>30 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-3">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โครงการรางวัลและประกาศนียบัตรทางวิชาการ
+                    </button>
+                    <div class="project-content" id="proj-3" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>เป็นผู้ไม่มีโรคสำคัญที่เป็นอุปสรรคต่อการศึกษา</li>
+                            <li>ผู้สมัครจะต้องมีผลการเรียนเฉลี่ยสะสมรวมอย่างน้อย 5 ภาคการศึกษา ไม่น้อยกว่า 3.00</li>
+                            <li>เป็นผู้ที่มีผลงาน รางวัล หรือประกาศนียบัตร</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>30 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-4">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โครงการโรงเรียนวิทยาศาสตร์
+                    </button>
+                    <div class="project-content" id="proj-4" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>เป็นผู้ไม่มีโรคสำคัญที่เป็นอุปสรรคต่อการศึกษา</li>
+                            <li>ผู้สมัครจะต้องมีผลการเรียนเฉลี่ยสะสมรวมอย่างน้อย 5 ภาคการศึกษา ไม่น้อยกว่า 3.00</li>
+                            <li>เป็นผู้ที่กำลังศึกษาระดับชั้นมัธยมศึกษาปีที่ 6 (สายวิทยาศาสตร์ - คณิตศาสตร์) ในโรงเรียนวิทยาศาสตร์ หรือโรงเรียนที่มีโครงการห้องเรียนพิเศษด้านวิทยาศาสตร์ คณิตศาสตร์ หรือโรงเรียนที่มีการจัดการเรียนสอนให้แก่ผู้มีความสามารถ พิเศษด้านคณิตศาสตร์และวิทยาศาสตร์</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>30 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-5">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โครงการ Engineering Pathway
+                    </button>
+                    <div class="project-content" id="proj-5" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรอาชีวะ</li>
+                            <li>เป็นผู้ที่เข้าร่วมเรียนในโครงการ Pre-Engineering School ที่จัดโดยคณะวิศวกรรมศาสตร์ สจล. และได้คะแนนเฉลี่ยสะสมรวมอย่างน้อย 3.5 จากการเรียน 6 วิชา</li>
+                            <li>เป็นผู้ไม่มีโรคสำคัญที่เป็นอุปสรรคต่อการศึกษา</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>30 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-6">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โครงการ สอวน.
+                    </button>
+                    <div class="project-content" id="proj-6" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>สำเร็จการศึกษาหรือกำลังศึกษาระดับชั้นมัธยมศึกษาปีที่ 6 (สายวิทยาศาสตร์ - คณิตศาสตร์และแผนการเรียนศิลป์ - คำนวณ)</li>
+                            <li>ต้องมีผลการเรียนเฉลี่ยสะสมรวมอย่างน้อยรวม 4 ภาคการศึกษา ไม่น้อยกว่า 2.75</li>
+                            <li>เป็นผู้สำเร็จการอบรมค่าย 2 ของมูลนิธิ สอวน.</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>40 คน (รวมทุกหลักสูตร)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-7">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โครงการบุตรของบุคลากรสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                    </button>
+                    <div class="project-content" id="proj-7" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>เป็นผู้ที่กำลังศึกษาระดับชั้นมัธยมศึกษาปีที่ 6 (สายวิทยาศาสตร์ - คณิตศาสตร์)</li>
+                            <li>ต้องมีผลการเรียนเฉลี่ยสะสมรวมอย่างน้อยรวม 5 ภาคการศึกษา ไม่น้อยกว่า 2.75</li>
+                            <li>เป็นผู้ไม่มีโรคสำคัญที่เป็นอุปสรรคต่อการศึกษา</li>
+                            <li>ผู้สมัครต้องเป็นบุตรโดยชอบด้วยกฎหมายของพนักงานสถาบัน ข้าราชการ หรือลูกจ้างประจำของสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังเท่านั้น ซึ่งยกเว้นบุตรบุญธรรม</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>5 คน (รวมทุกหลักสูตร)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quota -->
+            <section class="admis-panel" id="quota" role="tabpanel" aria-labelledby="tab-quota" hidden>
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-8">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โควตาเรียนดี
+                    </button>
+                    <div class="project-content" id="proj-8" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรอาชีวะ</li>
+                            <li>ผู้สมัครจะต้องมีผลการเรียนเฉลี่ยสะสมรวมอย่างน้อย 5 ภาคการศึกษา ไม่น้อยกว่า 3.00</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>15 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-9">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โควตากิจกรรม K-Engineering
+                    </button>
+                    <div class="project-content" id="proj-9" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรอาชีวะ</li>
+                            <li>ผู้สมัครจะต้องมีผลการเรียนเฉลี่ยสะสมรวมอย่างน้อย 5 ภาคการศึกษา ไม่น้อยกว่า 2.75</li>
+                            <li>เป็นผู้ที่ผ่านการเข้าร่วมกิจกรรมและได้รับประกาศนียบัตรในโครงการทางวิชาการกับ คณะ วิศวกรรมศาสตร์ สจล.</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>15 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-10">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        โควตากิจกรรม KMITL one
+                    </button>
+                    <div class="project-content" id="proj-10" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรอาชีวะ</li>
+                            <li>มีผลการเรียนเฉลี่ยสะสมรวม 5 ภาคการศึกษา มากกว่า 3.00 หรือมากกว่า 2.75 สำหรับผู้สมัครโครงการ K-Engineering</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>15 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Admission -->
+            <section class="admis-panel" id="ad" role="tabpanel" aria-labelledby="tab-ad" hidden>
+                <div class="proj-box">
+                    <button class="project-header" aria-expanded="false" aria-controls="proj-11">
+                        <img src="../asset/Icon/tri-rev.svg" alt="proj-notop" class="proj-notop-icon">
+                        Admission
+                    </button>
+                    <div class="project-content" id="proj-11" hidden>
+                        <p>คุณสมบัติ</p>
+                        <ul class="project-list">
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรแกนกลาง</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรนานาชาติ</li>
+                            <li>รับผู้สมัครที่จบจาก รร. หลักสูตรอาชีวะ</li>
+                        </ul>
+                        <p>เงื่อนไขการรับ</p>
+                        <ul class="project-list">
+                            <li>กำลังศึกษาหรือสำเร็จการศึกษาระดับมัธยมศึกษาตอนปลายสาย วิทย์-คณิต หรือประกาศนียบัตรวิชาชีพ (ปวช.) สายช่างอุตสาหกรรม ผู้สมัครต้องมีคะแนน TGAT , TPAT3 , A-level Math 1 และ Physics</li>
+                        </ul>
+                        <p>การคำนวณคะแนน</p>
+                        <ul class="project-list">
+                            <li>ความถนัดทั่วไป (TGAT) 20 %</li>
+                            <li>ความถนัดวิทยาศาสตร์ เทคโนโลยี วิศวกรรมศาสตร์ (TPAT3) 25 %</li>
+                            <li>A-Level คณิตศาสตร์ประยุกต์ 1 (พื้นฐาน+เพิ่มเติม) 25 %</li>
+                            <li>A-Level ฟิสิกส์ 30 %</li>
+                        </ul>
+                        <p>จำนวนที่เปิดรับ</p>
+                        <p>5 คน (รับร่วมกัน)</p>
+                        <p>รายละเอียดเพิ่มเติม</p>
+                        <p> https://new.reg.kmitl.ac.th/admission/#/</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Direct Admission -->
+            <section class="admis-panel" id="dir-ad" role="tabpanel" aria-labelledby="tab-dir-ad" hidden>
+                <div class="dir-content" >
+                    <h3>ไม่เปิดรับสมัครในรอบนี้</h3>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <a href="../Home/home.html"> <img src="../asset/logo.png" alt="footer-logo" class="footer-logo-img"></a>
+                </div>
+
+                <section class="footer-contact">
+                    <h3 id="footer-contact">Contact</h3>
+                    <p>02-329-8000 ext.5129</p>
+                    <p>02-329-8301 ext.235</p>
+                    <p>iote@kmitl.ac.th</p>
+                    <p>pikulkaew.ta@kmitl.ac.th</p>
+                </section>
+                
+                <section class="footer-address">
+                    <h3 id="footer-address">Address</h3>
+                    <p>คณะวิศวกรรมศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ชั้น 12 อาคารเรียนรวม 12 ชั้น</p>
+                    <p>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</p>
+                </section>
+
+                <nav class="social">
+                    <a href="https://web.facebook.com/IOTE.KMITL" target="_blank">
+                        <img src="../asset/Icon/Group 77.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fkmitl.iote.official%2F&source=omni_redirect" target="_blank">
+                        <img src="../asset/Icon/Group 76.svg" alt="Instagram">
+                    </a>
+                    <a href="https://line.me/R/ti/p/@800gkcmy?oat_content=url&ts=06181336" target="_blank">
+                        <img src="../asset/Icon/Group 75.svg" alt="Line">
+                    </a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <h3>IoT and Information Engineering | King Mongkut's Institute of Technology Ladkrabang</h3>
+            </div>
+        </div>
+    </footer>
+
+<script src="../Admission/admission.js"></script>
+</body>
+</html>
