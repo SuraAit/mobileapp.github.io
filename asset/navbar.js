@@ -29,14 +29,14 @@
     var hamburger = document.getElementById('hamburger');
     var menuEl = document.getElementById('menu');
     if (hamburger && menuEl) {
-      hamburger.addEventListener('click', function() {
+      hamburger.addEventListener('click', function () {
         menuEl.classList.toggle('active');
         hamburger.classList.toggle('active');
       });
     }
-    document.querySelectorAll('.tab-link').forEach(function(tab) {
-      tab.addEventListener('click', function() {
-        document.querySelectorAll('.tab-link').forEach(function(t) { t.classList.remove('active'); });
+    document.querySelectorAll('.tab-link').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.tab-link').forEach(function (t) { t.classList.remove('active'); });
         this.classList.add('active');
         if (menuEl) menuEl.classList.remove('active');
         if (hamburger) hamburger.classList.remove('active');
@@ -44,7 +44,7 @@
     });
   }
 
-  window.googleTranslateElementInit = function() {
+  window.googleTranslateElementInit = function () {
     new window.google.translate.TranslateElement({
       pageLanguage: 'th',
       includedLanguages: 'th,en',
@@ -78,23 +78,27 @@
 
   function triggerGoogleTranslate(lang) {
     var attempts = 0;
-    var timer = setInterval(function() {
+    var timer = setInterval(function () {
       attempts++;
       var select = document.querySelector('.goog-te-combo');
       if (select) {
         clearInterval(timer);
         select.value = lang === 'en' ? 'en' : 'th';
         select.dispatchEvent(new Event('change'));
-        setTimeout(function() {
+
+        setTimeout(function () {
           select.value = lang === 'en' ? 'en' : 'th';
           select.dispatchEvent(new Event('change'));
+          setTimeout(function () {
+            if (typeof fixAIoT === 'function') fixAIoT();
+          }, 1000);
         }, 300);
       }
       if (attempts > 50) clearInterval(timer);
     }, 100);
   }
 
-  window.selectLang = function(lang) {
+  window.selectLang = function (lang) {
     if (lang === currentLang) return;
     currentLang = lang;
     localStorage.setItem('lang', lang);
@@ -102,10 +106,10 @@
     triggerGoogleTranslate(lang);
   };
 
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     updateButtons(currentLang);
     if (currentLang === 'en') {
-      setTimeout(function() { triggerGoogleTranslate('en'); }, 1500);
+      setTimeout(function () { triggerGoogleTranslate('en'); }, 1500);
     }
   });
 

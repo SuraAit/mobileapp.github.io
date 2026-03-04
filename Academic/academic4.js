@@ -167,24 +167,32 @@ function applyLang(lang, animate) {
     else el.textContent = text;
  });
 }
-
-// ── Fix AIoT ── ป้องกัน Google Translate แปล AIoT เป็น AIO
+// ล็อคข้อความที่ไม่อยากให้ Google Translate แปล
 function fixAIoT() {
-  document.querySelectorAll('.NameEngAC').forEach(function(span) {
-    span.textContent = span.textContent
-      .replace(/Master of Engineering \(AIO.*?\)/gi, 'M.Eng. (AIoT and Information)')
-      .replace(/Doctor of Philosophy \(AIO.*?\)/gi, 'Ph.D. (AIoT and Information)')
-      .replace(/\bAIO\b/g, 'AIoT');
+  document.querySelectorAll('h1').forEach(function(h1) {
+  if (h1.textContent.includes('AIO') && !h1.textContent.includes('AIoT')) {
+            h1.textContent = h1.textContent.replace(/AIO/g, 'AIoT');
+        }
+    h1.innerHTML = h1.innerHTML.replace(/\bAIO\b/g, 'AIoT');
   });
 }
 
-// observe เฉพาะ element ที่สนใจ ไม่ใช่ทั้งหน้า
-var targets = document.querySelectorAll('.NameEngAC');
-if (targets.length) {
-  var observer = new MutationObserver(fixAIoT);
-  targets.forEach(function(el) {
-    observer.observe(el, { childList: true, characterData: true, subtree: true });
-  });
+// รันทุก 500ms เพื่อ override Google Translate
+setInterval(fixAIoT, 500);
+function fixAIoT() {
+    document.querySelectorAll('.NameEngAC').forEach(function(span) {
+        if (span.textContent.includes('AIO') && !span.textContent.includes('AIoT')) {
+            span.textContent = span.textContent.replace(/AIO/g, 'AIoT');
+        }
+    });
 }
 
+
+observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true
+});
+
+// รันครั้งแรกด้วย
 fixAIoT();
